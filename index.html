@@ -3,17 +3,20 @@
 	<title>CSS Framework Starter Sample</title>
 	
 </head>
+<!-- Page Wraper -->
 <body class="dark">
-	
+	<!-- Page Navigation -->
 	<div class="navbar">
 		<ul>
 			<li><h1 class="title">Framework Name</h1></li>
-			<li><a href="#colors">Colors</a></li>
+			<!-- <li><a href="#colors">Colors</a></li> -->
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
 			<li><a href="#type">Type</a></li>
-			<li><a href="#forms">forms</a></li>
-			<li><a href="#footer">Footer</a></li>
+			<li><a href="#links">Links</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+			<!-- <li><a href="#footer">Footer</a></li> -->
 		</ul>
 
 		<ul>
@@ -21,8 +24,11 @@
 		</ul>
 	</div>
 
-  <div class="container">
+	<!-- main content -->
+  <div class="container main">
 
+		<!-- --------------------------- -->
+		<!-- Headings -->
 		<section id="headings">
 			<h1>Headings</h1>
 			<h1>H1 Heading</h1>
@@ -44,7 +50,10 @@
 				</code>
 			</pre>
 		</section>
+		<!-- --------------------------- -->
 		
+		<!-- --------------------------- -->
+		<!-- Paragraph Style -->
 		<section id="type">
 			<h1>Paragraph styles</h1>
 			<p>This is the <strong>strong tag</strong> in a paragraph. 
@@ -60,8 +69,11 @@
 				</code>
 			</pre>
 		</section>
-		
-		<section id="forms">
+		<!-- ----------------------------- -->
+
+		<!-- --------------------------- -->
+		<!-- Button Styles -->
+		<section id="buttons">
 			<h2>Buttons</h2>
 
 			<p>This is your average button. You might want to click it.</p>
@@ -98,12 +110,26 @@
 				</code>
 			</pre>
 		</section>
-		
+		<!-- --------------------------- -->
+
+		<!-- --------------------------- -->
+		<!-- Link styles -->
 		<section>
 			<h2>Links</h2>
 			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
+		
+			<pre>
+				<code>
+&lt;p&gt;This &lt;a href=&quot;#&quot;&gt;paragraph&lt;/a&gt; contains a couple &lt;a
+href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p&gt;
+				</code>
+			</pre>
+		
 		</section>
+		<!-- --------------------------- -->
 
+		<!-- --------------------------- -->
+		<!-- Form Styles -->
 		<section>
 			<h2>Forms and controls</h2>
 			<form>
@@ -143,6 +169,27 @@
 					<span></span>
 				</label>
 			</form>
+
+			<h3>Input and label</h3>
+			<pre>
+				<code>
+&lt;label&gt;
+&#x9;&lt;span&gt;Text:&lt;/span&gt;
+&#x9;&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
+&lt;/label&gt;
+				</code>
+			</pre>
+
+			<h3>Checkbox and label</h3>
+			<pre>
+				<code>
+&lt;label class=&quot;control-checkbox&quot;&gt;One
+&#x9;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
+&#x9;&lt;span&gt;&lt;/span&gt;
+&lt;/label&gt;
+				</code>
+						</pre>
+
 		</section>
 
 
@@ -174,6 +221,9 @@
 			</div>
 		</section> -->
 		
+
+		<!-- --------------------------- -->
+		<!-- Nav Bar styles -->
 		<section id="navbar">
 			<h1>Navbar</h1>
 			
@@ -211,6 +261,8 @@
 		
 		
 		
+		<!-- --------------------------- -->
+		<!-- Footer Styles -->
 		<section id="footers">
 			<h2>Page Footer</h2>
 			<div class="page-footer">
