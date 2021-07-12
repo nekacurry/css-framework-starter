@@ -1,9 +1,30 @@
+:root {
+  --color-background: #2d2a33 ;
+  --color-foreground: #e1d0eb;
+  --color-dark: #1b0d1b;
+  --color-md-light: #D8D8F6;
+  --color-light: #EEEEFB;
+  --color-md-dark: #422142;
+  --color-primary: #B18FCF;
+  --color-info: #5290a7;
+  --color-success: #89CE94;
+  --color-danger: #E05269;
+  --color-callout: #FFE1A8;
+  --color-lightest: #fff;
+  --font-base-size: 18px;
+}
+
 body {
-  font-size: 18px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-size: var(--font-base-size);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-background);
+  margin: 0;
+  color: var(--color-dark);
 }
 
 /* Typography */
+
+h1,h2,h3,h4,h5,h6 { color: var(--color-md-dark);}
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
@@ -14,15 +35,91 @@ h6 { font-size: 1rem; }
 
 a {
   text-decoration: none;
-  color: #557fce;
+  color: var(--color-info);
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* Buttons */
 
 button {
-  padding: 16px;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #557fce;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
   border: none;
+  margin: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-md-dark);
+  color: var(--color-light);
+}
+
+/* Form Styles */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-foreground);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .title {
+  margin: 0;
+  color: var(--color-md-dark)
+}
+
+.navbar ul a {
+  margin: 0 0 0 1rem;
+  color: var(--color-light);
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.container section {
+  background-color: var(--color-foreground);
+  padding: 30px;
+  margin: 10px;
 }
